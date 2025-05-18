@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'draggable_vehicle.dart';
 
 class TownBoard extends StatelessWidget {
   const TownBoard({super.key});
@@ -8,10 +7,23 @@ class TownBoard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        // Background: roads, signs, etc. You can use a custom painter or images.
+        // Background
         Positioned.fill(child: Container(color: Colors.grey[300])),
-        const DraggableVehicle(),
-        // Add road signs and more vehicles here
+
+        // Example Road Signs
+        Positioned(
+          top: 100,
+          left: 50,
+          child: Image.asset('assets/images/signs/stop_sign.png', width: 60),
+        ),
+        Positioned(
+          top: 200,
+          left: 150,
+          child: Image.asset('assets/images/signs/yield_sign.png', width: 50),
+        ),
+
+        // Example draggable car (you already have this)
+        // const DraggableVehicle(),
       ],
     );
   }
