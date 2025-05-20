@@ -15,4 +15,3 @@ class ModelTownBoardApp extends StatelessWidget {
     );
   }
 }
-
