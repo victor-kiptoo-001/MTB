@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'config/app_routes.dart';
-
 class ModelTownBoardApp extends StatelessWidget {
   const ModelTownBoardApp({super.key});
 
